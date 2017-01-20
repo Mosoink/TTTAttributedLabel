@@ -1177,7 +1177,7 @@ afterInheritingLabelAttributesAndConfiguringWithBlock:(NSMutableAttributedString
 - (void)setActiveLink:(TTTAttributedLabelLink *)activeLink {
     _activeLink = activeLink;
     
-    NSDictionary *activeAttributes = activeLink.activeAttributes ?: self.activeLinkAttributes;
+    NSDictionary *activeAttributes = activeLink.activeAttributes;
 
     if (_activeLink && activeAttributes.count > 0) {
         if (!self.inactiveAttributedText) {
